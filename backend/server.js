@@ -33,15 +33,17 @@ app.use(express.json());
 app.use(cookieParser());
 
 // MongoDB connection
-// mongoose.connect(process.env.MONGODB_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
+mongoose.connect(process.env.MONGODB_URI, {
+  
+})
 
-mongoose.connect('mongodb+srv://...');
+// mongoose.connect('mongodb+srv://...');
 
-.then(() => console.log('Connected to MongoDB'))
-.catch((err) => console.error('Could not connect to MongoDB', err));
+// .then(() => console.log('Connected to MongoDB'))
+// .catch((err) => console.error('Could not connect to MongoDB', err));
+
+
+
 
 // Routes
 app.use('/api/signup', signupRoutes);
