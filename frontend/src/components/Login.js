@@ -44,6 +44,7 @@ const Login = () => {
         },
         body: JSON.stringify({ email, password, role: selectedRole }),
       });
+      console.log(response)
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('token', data.token);

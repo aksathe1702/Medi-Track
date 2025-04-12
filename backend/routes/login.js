@@ -11,6 +11,7 @@ dotenv.config();
 const router = express.Router();
 
 router.post('/', async (req, res) => {
+  console.log("i am in login")
   const { email, password, role } = req.body;
 
   console.log('Received data:', req.body);

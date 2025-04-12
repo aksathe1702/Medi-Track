@@ -45,7 +45,7 @@ const Home = () => {
       <header className="flex items-center justify-between px-6 py-4 bg-white">
         <div className="flex items-center gap-2">
           <Hospital className="w-8 h-8 text-blue-600" />
-          <span className="text-xl font-bold">Medi-Track</span>
+          <span className="text-xl font-bold">Baroque-HealthTech </span>
         </div>
         <nav className="flex items-center gap-4">
           <Button primary onClick={() => handleButtonClick('/login')}>Login</Button>
@@ -130,7 +130,7 @@ const Home = () => {
 
       <footer className="bg-black py-6 border-t">
         <div className="container mx-auto px-4 flex items-center justify-between">
-          <p className="text-gray-100">&copy; 2024 Medi-Track. All rights reserved.</p>
+          <p className="text-gray-100">&copy; Baroque-HealthTech.</p>
         </div>
       </footer>
     </div>
