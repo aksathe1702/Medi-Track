@@ -39,8 +39,8 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // mongoose.connect('mongodb+srv://...');
 
-// .then(() => console.log('Connected to MongoDB'))
-// .catch((err) => console.error('Could not connect to MongoDB', err));
+.then(() => console.log('Connected to MongoDB'))
+.catch((err) => console.error('Could not connect to MongoDB', err));
 
 
 
@@ -60,9 +60,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// app.listen(PORT, () => {
-//   console.log(`Server is running on port ${PORT}`);
-// });
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on http://0.0.0.0:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+
