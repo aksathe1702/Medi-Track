@@ -1,3 +1,2 @@
-export const BASE_URL = process.env.NODE_ENV === "development"
-  ? "https://baroquehealth-backend.onrender.com/api"
-  : "/api";
+export const BASE_URL = "https://medi-track-bakend.vercel.app/api"
+
